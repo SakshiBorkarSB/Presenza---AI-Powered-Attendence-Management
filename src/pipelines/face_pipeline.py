@@ -60,7 +60,7 @@ def get_trained_model():
     except ValueError:
         pass
 
-    return {"svc": clf, "X": X, "y": y}
+    return {"clf": clf, "X": X, "y": y}
 
 # when a new student sign up
 def train_classifer(): 
@@ -99,4 +99,4 @@ def predict_attendence(class_image_np):
 
         if best_match_score <= resemblance_threshold:
             detected_student[predicted_id] = True
-    return detected_student, all_students, len(encoding)
+    return detected_student, all_students, len(encodings)

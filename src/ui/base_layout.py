@@ -145,6 +145,15 @@ def style_base_layout():
                 font-weight: 500 !important;
             }
 
+            .st-key-student-container h3 {
+                font-size: 18px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .st-key-student-container{
+                max-width: 700px !important;
+            }
+
 
         </style>
             """, unsafe_allow_html = True)
