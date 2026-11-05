@@ -19,7 +19,7 @@ def style_background_dashboard():
     st.markdown("""
         <style>
             .stApp{
-                background: #8B70CE !important;
+                background: #E6D9FF !important;
             }
 
             
@@ -39,6 +39,7 @@ def style_base_layout():
             }
 
             .block-container{
+                max-width: 600px !important;
                 padding-top: 1.5rem !important;
                 padding-bottom: 0rem;
                 min-height: 100vh;
@@ -53,9 +54,27 @@ def style_base_layout():
                 padding-bottom: 0 !important;
             }
 
-            h3, h4, p {
+            h3 {
                 font-family: 'Poppins', sans-serif !important;
-                color: #E6D9FF !important;
+                font-size: 3rem !important;
+                font-weight: 700 !important;
+                color: #35245F !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                line-height: 1 !important;
+            }
+
+            h2{
+                font-family: 'Poppins', sans-serif !important;
+                color: #35245F !important;   
+                font-size: 30px !important;   
+                margin-top: 10px !important;          
+            }
+
+            h4, p {
+                font-family: 'Poppins', sans-serif !important;
+                color: #35245F !important;
+                font-size: 16px !important;
             }
 
             button[kind = "primary"] {
@@ -72,6 +91,7 @@ def style_base_layout():
                 font-size: 19px !important;
                 font-weight: 600 !important;
                 color: #35245F !important;
+                width: "stretch";
             }
 
             button[kind="primary"]:hover {
@@ -79,27 +99,52 @@ def style_base_layout():
                 background: white !important;
             }
 
-            .st-emotion-cache-1bnbo98 {
-                align-items: center;
-                justify-content: center;
-            }
-
-            div.stHorizontalBlock {
-                justify-content: center;
-                gap: 5rem;
-            }
-
-            div.stColumn {
-                flex: 0 0 auto;
-                width: auto !important;
-            }
-
             button[kind="primary"] [data-testid="stIconMaterial"] {
                 color: #35245F !important;
                 font-weight: 700 !important;
                 font-size: 20px !important;
             }
-            
+
+            button[kind = "secondary"] {
+                background: #35245F !important;
+                border-radius: 0.5rem !important;
+                padding: 7px 15px !important;
+                border: none !important;
+                transition: all 0.25s ease-in-out !important;
+            }
+
+            /* Button text */
+            button[kind="secondary"] p {
+                font-family: 'Poppins', sans-serif !important;
+                font-size: 18px !important;
+                font-weight: 500 !important;
+                color: #E6D9FF !important;
+            }
+
+            button[kind="secondary"]:hover {
+                transform: scale(1.02);
+                background: #523B91 !important;
+            }
+
+            button[kind="secondary"] [data-testid="stIconMaterial"] {
+                color: #E6D9FF !important;
+                font-weight: 500 !important;
+                font-size: 20px !important;
+            }
+
+            /* Toast notification */
+            div[data-testid="stToast"] {
+                background-color: #F5F0FF !important;
+                border: 1px solid #C9B5F5 !important;
+                border-radius: 12px !important;
+            }
+
+            div[data-testid="stToast"] [data-testid="stMarkdownContainer"] p {
+                color: #35245F !important;
+                font-family: 'Poppins', sans-serif !important;
+                font-weight: 500 !important;
+            }
+
 
         </style>
             """, unsafe_allow_html = True)
