@@ -19,3 +19,6 @@ segno  # for QR code
 pillow  # for image preprocessing
 
 streamlit 
+
+librosa  # edits, loads, etc the audio files
+resemblyzer  # embedds
