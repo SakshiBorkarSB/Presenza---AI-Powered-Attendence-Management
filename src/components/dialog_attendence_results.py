@@ -19,7 +19,7 @@ def show_attendence_result(df, logs):
         if st.button("Confirm & Save", width = "stretch"):
             try:
                 create_attendence(logs)
-                st.toast("Attendence taken")
+                st.toast("Attendence taken!")
                 st.session_state.attendence_images = []
                 st.session_state.voice_attendence_results = None
                 st.rerun()

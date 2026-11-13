@@ -6,6 +6,11 @@ from src.screens.student_screen import student_screen
 from src.components.dialog_auto_enroll import auto_enroll_dialog
 
 def main():
+    st.set_page_config(
+        page_title = "Classora - Smart Classrooms. Smarter Attendance.",
+        page_icon = "src/images/favicon.ico"
+        
+    )
     if 'login_type' not in st.session_state:
         st.session_state["login_type"] = None
 
