@@ -10,11 +10,11 @@ def header_home():
 
     st.markdown("""
         <style>
-            .classora-title a {
+            .presenza-title a {
                 display: none !important;
             }
 
-            .classora-title {
+            .presenza-title {
                 margin: 0;
                 padding: 0;
             }
@@ -25,7 +25,7 @@ def header_home():
         <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 25px; margin-top: 50px">
             <img src="data:image/png;base64,{encoded}"
                  style="height: 120px; width: auto;" />
-            <h1 class="classora-title">Classora</h1>
+            <h1 class="presenza-title">Presenza</h1>
             <span style = "font-size: 20px; font-style: italic; color: #E6D9FF"> Smart Classrooms. Smarter Attendance. </span>
         </div>
     """, unsafe_allow_html=True)
@@ -41,6 +41,6 @@ def header_dashboard():
             <div style="display: flex; align-items: center; gap: 7px;">
                 <img src="data:image/png;base64,{encoded}"
                     style="height: 60px; width: auto;" />
-                <h3>Classora</h3>
+                <h3>Presenza</h3>
             </div>
         """, unsafe_allow_html=True)

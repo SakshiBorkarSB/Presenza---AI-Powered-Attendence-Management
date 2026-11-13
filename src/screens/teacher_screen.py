@@ -92,7 +92,7 @@ def teacher_tab_take_attendence():
           st.warning("You haven't created any subjects yet! Please create one to begin.")
           return
 
-     subject_options = {f"{s["name"]} - {s["subject_code"]}": s["subject_id"] for s in subjects}
+     subject_options = {f"{s['name']} - {s['subject_code']}": s['subject_id'] for s in subjects}
 
      col1, col2 = st.columns([2, 1])
 
@@ -199,7 +199,7 @@ def teacher_tab_manage_subjects():
 
                def share_btn(subject=subject):
                     if st.button(
-                         f"Share Code: {subject["name"]}",
+                         f"Share Code: {subject['name']}",
                          key = f"share_{subject['subject_code']}",
                          icon = ":material/share:"
                     ):

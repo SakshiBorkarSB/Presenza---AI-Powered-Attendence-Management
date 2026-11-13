@@ -1,7 +1,4 @@
 import streamlit as st
-import segno
-import io
-import time
 from PIL import Image
 
 

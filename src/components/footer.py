@@ -4,7 +4,7 @@ import streamlit as st
 def footer_home():
     st.html("""
         <style>
-            .classora-footer {
+            .presenza-footer {
                 position: fixed;
                 bottom: 10px;
                 right: 20px;
@@ -18,13 +18,13 @@ def footer_home():
                 letter-spacing: 0.4px;
             }
 
-            .classora-footer span {
+            .presenza-footer span {
                 font-weight: 600;
             }
         </style>
 
-        <div class="classora-footer">
-                © 2026 <span>Classora</span>
+        <div class="presenza-footer">
+                © 2026 <span>Presenza</span>
                 · AI-Powered Attendance Management
         </div>
     """)
@@ -32,7 +32,7 @@ def footer_home():
 def footer_dashboard():
     st.html("""
         <style>
-            .classora-footer {
+            .presenza-footer {
                 position: fixed;
                 bottom: 10px;
                 right: 20px;
@@ -46,13 +46,13 @@ def footer_dashboard():
                 letter-spacing: 0.4px;
             }
 
-            .classora-footer span {
+            .presenza-footer span {
                 font-weight: 600;
             }
         </style>
 
-        <div class="classora-footer">
-                © 2026 <span>Classora</span>
+        <div class="presenza-footer">
+                © 2026 <span>Presenza</span>
                 · AI-Powered Attendance Management
         </div>
     """)
