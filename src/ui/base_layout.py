@@ -39,7 +39,7 @@ def style_base_layout():
             }
 
             .block-container{
-                max-width: 600px !important;
+                max-width: 680px !important;
                 padding-top: 1.5rem !important;
                 padding-bottom: 0rem;
                 min-height: 100vh;
@@ -71,10 +71,22 @@ def style_base_layout():
                 margin-top: 10px !important;          
             }
 
-            h4, p {
+            p {
                 font-family: 'Poppins', sans-serif !important;
                 color: #35245F !important;
                 font-size: 16px !important;
+            }
+
+            h4 {
+                font-family: 'Poppins', sans-serif !important;
+                color: #35245F !important;
+                font-size: 20px !important;
+            }
+
+            h5{
+                font-family: 'Poppins', sans-serif !important;
+                color: #35245F !important;
+                font-size: 20px !important;
             }
 
             button[kind = "primary"] {
@@ -108,7 +120,7 @@ def style_base_layout():
             button[kind = "secondary"] {
                 background: #35245F !important;
                 border-radius: 0.5rem !important;
-                padding: 7px 15px !important;
+                padding: 8px 14px !important;
                 border: none !important;
                 transition: all 0.25s ease-in-out !important;
             }
@@ -116,7 +128,7 @@ def style_base_layout():
             /* Button text */
             button[kind="secondary"] p {
                 font-family: 'Poppins', sans-serif !important;
-                font-size: 18px !important;
+                font-size: 15px !important;
                 font-weight: 500 !important;
                 color: #E6D9FF !important;
             }
@@ -129,7 +141,34 @@ def style_base_layout():
             button[kind="secondary"] [data-testid="stIconMaterial"] {
                 color: #E6D9FF !important;
                 font-weight: 500 !important;
-                font-size: 20px !important;
+                font-size: 16px !important;
+            }
+
+            button[kind = "tertiary"] {
+                background: #523B91 !important;
+                border-radius: 0.5rem !important;
+                padding: 8px 14px !important;
+                border: none !important;
+                transition: all 0.25s ease-in-out !important;
+            }
+
+            /* Button text */
+            button[kind="tertiary"] p {
+                font-family: 'Poppins', sans-serif !important;
+                font-size: 15px !important;
+                font-weight: 500 !important;
+                color: #E6D9FF !important;
+            }
+
+            button[kind="tertiary"]:hover {
+                transform: scale(1.02);
+                background: #35245F !important;
+            }
+
+            button[kind="tertiary"] [data-testid="stIconMaterial"] {
+                color: #E6D9FF !important;
+                font-weight: 500 !important;
+                font-size: 16px !important;
             }
 
             /* Toast notification */
@@ -152,6 +191,59 @@ def style_base_layout():
 
             .st-key-student-container{
                 max-width: 700px !important;
+            }
+
+            hr {
+                background-color: #35245F !important;
+                margin: 0px !important;
+                height: 2px !important;
+            }
+
+            /* Dialog box */
+            div[data-testid="stDialog"] [role="dialog"] {
+                background-color: #E6D9FF !important;
+                color: #35245F !important;
+                border: 1px solid #C9B5F5 !important;
+                border-radius: 16px !important;
+            }
+
+            /* Keep inner content transparent */
+            div[data-testid="stDialog"] [data-testid="stVerticalBlock"] {
+                background-color: transparent !important;
+            }
+
+            /* Dialog close button */
+            div[data-testid="stDialog"] button[aria-label="Close"] {
+                color: #7054B5 !important;
+                background-color: transparent !important;
+            }
+
+            /* Hover effect */
+            div[data-testid="stDialog"] button[aria-label="Close"]:hover {
+                color: #523B91 !important;
+                background-color: #E6D9FF !important;
+            }
+
+            /* Reduce code box padding */
+            div[data-testid="stCode"] pre {
+                padding: 10px 10px !important;
+            }
+
+            /* Code text */
+            div[data-testid="stCode"] code {
+                color: #E6D9FF !important;
+                font-size: 14px !important;
+            }
+
+            /* Tooltip: Copy to clipboard */
+            div[data-testid="stTooltipContent"] {
+                background-color: #FFFFFF !important;
+                color: #7054B5 !important;
+                border: 1px solid #C9B5F5 !important;
+            }
+
+            div[data-testid="stTooltipContent"] * {
+                color: #7054B5 !important;
             }
 
 
