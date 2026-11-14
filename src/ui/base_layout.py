@@ -246,6 +246,34 @@ def style_base_layout():
                 color: #7054B5 !important;
             }
 
+            [data-testid="stAlert"] {
+                background: white !important;
+                background-color: white !important;
+            }
+
+            [data-testid="stAlert"] * {
+                color: #35245F !important;
+            }
+
+            /* Global Streamlit warning styling */
+            div[data-testid="stAlert"],
+            div[data-testid="stAlert"] *,
+            div[data-testid="stAlert"] [role="alert"] {
+                background-color: #FFFFFF !important;
+                background: #FFFFFF !important;
+            }
+
+            /* Warning text */
+            div[data-testid="stAlert"] p,
+            div[data-testid="stAlert"] span {
+                color: #35245F !important;
+            }
+
+            /* Warning border */
+            div[data-testid="stAlert"] {
+                border: 1px solid #C9B5F5 !important;
+                border-radius: 10px !important;
+            }
 
         </style>
             """, unsafe_allow_html = True)
