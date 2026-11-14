@@ -25,7 +25,7 @@ def footer_home():
 
         <div class="presenza-footer">
                 © 2026 <span>Presenza</span>
-                · AI-Powered Attendance Management
+                · AI-Powered Attendence Management
         </div>
     """)
 
@@ -53,6 +53,6 @@ def footer_dashboard():
 
         <div class="presenza-footer">
                 © 2026 <span>Presenza</span>
-                · AI-Powered Attendance Management
+                · AI-Powered Attendence Management
         </div>
     """)
