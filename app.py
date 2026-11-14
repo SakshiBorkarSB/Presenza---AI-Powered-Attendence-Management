@@ -7,7 +7,7 @@ from src.components.dialog_auto_enroll import auto_enroll_dialog
 
 def main():
     st.set_page_config(
-        page_title = "Presenza - Smart Classrooms. Smarter Attendance.",
+        page_title = "Presenza - AI Powered Attendance Management.",
         page_icon = "src/images/favicon.ico"
     )
     if 'login_type' not in st.session_state:
