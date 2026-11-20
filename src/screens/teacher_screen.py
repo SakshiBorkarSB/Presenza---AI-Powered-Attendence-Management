@@ -287,7 +287,7 @@ def teacher_screen_login():
             st.markdown("<div style='height: 20px;'></div>",unsafe_allow_html=True)
 
             if st.button("Home", type="secondary", key="loginbackbtn", icon=":material/home:",icon_position="left", width = "stretch"):
-                st.session_state["login_type"] = "login"
+                st.session_state["login_type"] = None
                 st.rerun()
 
 
